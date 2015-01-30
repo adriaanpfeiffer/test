@@ -1,0 +1,99 @@
+
+Project...: Bartels Lochem, Herman Lammerts
+Part..... : 9772 - Vergelijking tov Casta ivm. ZNS-verb.
+Dimensions: [kN] [kNm] [mm] [graden] [N/mm2] [kNm/rad]
+Date......: 29-01-1996
+Filename..: unnamed.vrb
+Applied standards according to TGB 1990
+--------------------------------------------------------------------------
+Steel         NEN 6770:1997                  A1:2001          
+              NEN 6771:2000                  A1:2001          
+              NEN 6772:2000                  A1:2001          
+CONNECTIONS - BASIC DATA  KLANT96.VRB
+--------------------------------------------------------------------------
+Connection type  T-1 Bolted
+Design yield stress f y;d plates  235
+Angle of base cont. section against global axis (left = positive)  270
+Classification construction  Sway
+Classification web continuous section  Non-sway
+Shear column web active?  Yes
+Model of global analysis used for mechanics results  1st order elastic
+Static system  Statically indeterminate
+Connection at place of plastic hinge  Yes
+Alternative method T-stub acc. to EN 1993-1-8 table 6.2  Yes
+ HEA600 
+ HEA600 
+a
+b
+c
+120
+200
+170
+140
+150
+140
+140
+60
+84
+131
+84
+d
+LEGEND
+  Part         Dimensions    Number Welds (d=double fillet weld)
+--------------------------------------------------------------------------
+a Cap plate    300x1120-25        1 aw=6d af=12d
+b Haunch fl.   300x728-25         1 afe=25 aff=25 afw=6d
+c Haunch web   390x615-15         1 awe=6d awf=6d
+d Bolt         14*M30 8.8         1 
+SECTIONS                      Name              Length Prod.meth.    Exc Angle fy;d
+--------------------------------------------------------------------------
+Column              HEA600              3000  Rolled         0  270   235
+Right beam          HEA600             30600  Rolled         0    0   235
+Top column                              3000
+SECTION DATA [mm]                                                                                                           Rolled  Class  1  HEA600
+--------------------------------------------------------------------------
+h :   590.0  iy:  249.7  A : 22650.0    Wey:  4787.0E3  Iy:    141200.0E4
+b :   300.0  iz:   70.5                 Wez:   751.0E3  Iz:     11270.0E4
+tw:    13.0  r :   27.0                 Wpy:  5350.0E3  It:       407.0E4
+tf:    25.0                             Wpz:  1156.0E3  Iw:   8978220.0E6
+BOLTS              dn qual sp.  environ. length  v (from bottom)
+--------------------------------------------------------------------------
+Right      M30  8.8 131   Non-corr.   50  120;320;490;630;780;920;1060
+BOLT DATA
+  dn   dg  sps dhd  thd  dnut  tnut      A    As    gM fybd ftbd Thread
+--------------------------------------------------------------------------
+30.0 33.0 63.7 46.0 19.0  46.0  24.0 706.9 560.6  1.25  640  800 Rolled
+WARNINGS
+Component     Side  Row Item    Seriousness Art./(Frm.) Min. Value   Max.
+--------------------------------------------------------------------------
+Haunch fl.    B-R       Fl.-fl. weld D   4  frmsh 5.3.a  27.7  25.0      
+                        Flange weld on haunch flange must be larger.
+              B-R       Position bottom  5                    390.0 380.3
+                        Height of haunch must be lower.
+CHECKS
+Component     Side  Row Item    Seriousness Art./(Frm.) Min. Value   Max.
+--------------------------------------------------------------------------
+Bolt          Right  1  Pitch dist. s1      1-8 3.5(1)   72.6 200.0 200.0
+              Right  1  Spacing dist. s2    1-8 3.5(1)  130.7 131.0 200.0
+              Right  2  Pitch dist. s1      1-8 3.5(1)   72.6 170.0 200.0
+              Right  2  Spacing dist. s2    1-8 3.5(1)  130.7 131.0 200.0
+              Right  3  Pitch dist. s1      1-8 3.5(1)   72.6 140.0 200.0
+              Right  3  Spacing dist. s2    1-8 3.5(1)  130.7 131.0 200.0
+              Right  4  Pitch dist. s1      1-8 3.5(1)   72.6 150.0 200.0
+              Right  4  Spacing dist. s2    1-8 3.5(1)  130.7 131.0 200.0
+              Right  5  Pitch dist. s1      1-8 3.5(1)   72.6 140.0 200.0
+              Right  5  Spacing dist. s2    1-8 3.5(1)  130.7 131.0 200.0
+              Right  6  Pitch dist. s1      1-8 3.5(1)   72.6 140.0 200.0
+              Right  6  Spacing dist. s2    1-8 3.5(1)  130.7 131.0 200.0
+              Right  7  Spacing dist. s2    1-8 3.5(1)  130.7 131.0 200.0
+Bolt (Plate)  Right  1  End distance e1     1-8 3.5(1)   39.6 120.0      
+              Right  7  End distance e1     1-8 3.5(1)   39.6  60.0      
+Cap plate     Right     Flange weld DD      1.0*Mpld     11.5  12.0      
+              Right     Position top                    306.1 415.0      
+              Right     Web weld DD         1.0*Mpld      6.0   6.0      
+Haunch        B-R       Height              6.2.6.7(2)        390.0 615.0
+Haunch fl.    B-R       Thickness           frmsh 5.3.a  21.1  25.0      
+              B-R       Weld fl.-plt D      1.0*Mpld     11.5  25.0      
+              B-R       Weld fl.-plt D      frmsh 5.3.a  17.6  25.0      
+Haunch web    B-R       Thickness           frmsh 5.3.a  13.0  15.0      
+              B-R       Weld web-plt DD     1.0*Mpld      6.0   6.0      
